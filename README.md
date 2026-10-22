@@ -10,7 +10,7 @@ Your car has two wheels, each on a 360° servo.
 The two servos face opposite ways, so to drive forward they must turn in opposite directions:
 Servo 1 **counter-clockwise**, Servo 2 **clockwise**.
 
-![The two servos face opposite ways](https://startabit.startabit.workers.dev/projects/microbit-servo-car/images/5-opposite-ways.png)
+![The two servos face opposite ways](https://www.startabit.com/projects/microbit-servo-car/images/5-opposite-ways.png)
 
 ## Step 1: A function to drive forward
 
