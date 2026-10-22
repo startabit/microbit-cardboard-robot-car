@@ -12,12 +12,10 @@ Servo 1 **counter-clockwise**, Servo 2 **clockwise**.
 
 ![The two servos face opposite ways](https://www.startabit.com/projects/microbit-servo-car/images/5-opposite-ways.png)
 
-## Step 1: A function to drive forward
+## Step 1: Drive forward
 
-Make a function called **forward**: open ``||functions:Functions||`` and click **Make a Function...**.
-
-Put two ``||kitronik_simple_servo:set servo to turn at % speed||`` blocks inside it:
-servo **1** turns **counter-clockwise** at **50** %, servo **2** turns **clockwise** at **50** %.
+Make a function **forward** (``||functions:Make a Function...||``).
+Inside: servo **1** **counter-clockwise** and servo **2** **clockwise**, both at **50** %.
 
 ```blocks
 function forward () {
@@ -26,9 +24,9 @@ function forward () {
 }
 ```
 
-## Step 2: A function to stop
+## Step 2: Stop
 
-Make a second function called **stop_car** with two ``||kitronik_simple_servo:stop servo||`` blocks: servo **1** and servo **2**.
+Make a function **stop_car** with ``||kitronik_simple_servo:stop servo||`` **1** and **2**.
 
 ```blocks
 function stop_car () {
@@ -37,10 +35,10 @@ function stop_car () {
 }
 ```
 
-## Step 3: Button A drives forward for 2 seconds
+## Step 3: Button A
 
-Take an ``||input:on button A pressed||`` block. Inside it: show an arrow with ``||basic:show arrow||``,
-``||functions:call forward||``, ``||basic:pause||`` **2000** ms, ``||functions:call stop_car||``, then ``||basic:clear screen||``.
+In ``||input:on button A pressed||``: show an arrow, call **forward**, pause **2000** ms,
+call **stop_car**, clear the screen.
 
 ```blocks
 function forward () {
@@ -60,19 +58,20 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## Step 4: Test with the wheels in the air
+## Step 4: Test in the air
 
-Click **Download** to download the program to your Micro:bit. Switch the servo board **ON**.
-Hold the car up and press **A**: both wheels should roll **forward** for 2 seconds.
+**Download**, switch the servo board **ON**, hold the car up and press **A**.
+Both wheels should roll **forward** for 2 seconds.
 
-- Car goes backwards? Swap the direction in **both** servo blocks.
-- One wheel goes the wrong way? Swap the direction of **that** servo only.
+## Step 5: Wrong way?
 
-## Step 5: Spin right with button B
+Car goes backwards? Swap the direction in **both** servo blocks.
+One wheel goes the wrong way? Swap **that** servo only.
 
-Make a function **spin_right**: both servos turn **counter-clockwise** at **50** %.
-The left wheel rolls forward and the right wheel rolls backward, so the car spins on the spot.
-Call it from ``||input:on button B pressed||`` for **1000** ms, then ``||functions:call stop_car||``.
+## Step 6: Spin with button B
+
+Make a function **spin_right**: both servos **counter-clockwise** at **50** %.
+Call it from ``||input:on button B pressed||`` for **1000** ms, then **stop_car**.
 
 ```blocks
 function spin_right () {
