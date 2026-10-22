@@ -9,7 +9,6 @@
         "pxt-kitronik-simple-servo": "github:kitronikltd/pxt-kitronik-simple-servo#v0.0.7"
     },
     "files": [
-        "main.ts",
         "README.md"
     ],
     "supportedTargets": [
