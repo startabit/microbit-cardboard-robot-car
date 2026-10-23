@@ -1,7 +1,7 @@
 {
-    "name": "microbit-servo-car",
+    "name": "microbit-cardboard-robot-car",
     "version": "0.0.1",
-    "description": "Step-by-step tutorial: program a two-wheel servo car (Kitronik Simple Servo board)",
+    "description": "Step-by-step tutorial: program your cardboard robot car (two servos on the Kitronik Simple Servo board)",
     "dependencies": {
         "core": "*",
         "radio": "*",
